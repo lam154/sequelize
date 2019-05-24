@@ -40,12 +40,7 @@ export interface SyncOptions extends Logging {
    * If force is true, each DAO will do DROP TABLE IF EXISTS ..., before it tries to create its own table
    */
   force?: boolean;
-
-  /**
-   * If alter is true, each DAO will do ALTER TABLE ... CHANGE ...
-   */
-  alter?: boolean;
-
+  
   /**
    * Match a regex against the database name before syncing, a safety check for cases where force: true is
    * used in tests but not live code
